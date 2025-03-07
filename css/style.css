@@ -4,7 +4,7 @@
     --primary-color-text: #BFA9A0;
     --primary-color-headlines: #3D4677;
     --primary-color-accent: #DB7559;
-    --primary-color-background: #fdf5f2;
+    --primary-color-background: #fffefd;
 
 }
 
@@ -115,10 +115,7 @@ hr {
     object-fit: cover;
     margin-top: 25px;
     margin-bottom: 50px;
-    ;
 }
-
-
 
 .my-clients {
     width: 100%;
@@ -144,13 +141,13 @@ hr {
     font-weight: regular;
     color: var(--primary-color-headlines);
     background-color: var(--primary-color-text);
+    opacity: 0.6;
     padding: 5px;
     margin-bottom: 20px;
 }
 
 .card p {
     font-size: 16px;
-    ;
     margin: auto 20px;
     line-height: 25px;
 }
@@ -180,26 +177,273 @@ hr {
 
 .social-media-icons ul {
     list-style: none;
-    padding: 0;/* listidel on vaikimis vasakul padding! */
-}
-.social-media-icons ul li{
-   display: inline-block;
-   width: 48px;
-   height: 48px;
-   margin-top: 57px;
-   margin: 29px;
+    padding: 0;
+    /* listidel on vaikimis vasakul padding! */
 }
 
-footer{
+.social-media-icons ul li {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin-top: 57px;
+    margin: 29px;
+}
+
+footer {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-footer p{
+footer p {
     margin-left: 10px;
     color: var(--primary-color-headlines);
     font-size: 16px;
 }
 
+
+.menu-list ul li {
+    display: none;
+}
+
+.profile-learn-more {
+    display: none;
+}
+
+.gallery {
+    display: none;
+}
+
+.contact-me h3,
+.contact-me p {
+    display: none;
+}
+
+.contact-form {
+    display: none;
+}
+
+.contact-details {
+    display: none;
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .logo-span {
+        font-size: 34px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .menu {
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+    }
+
+    .menu-list ul {
+        list-style: none;
+        padding: 0;
+        text-transform: uppercase;
+        font-size: 24px;
+        color: var(--primary-color-headlines);
+        font-weight: regular;
+    }
+
+    .menu-list ul li {
+        display: inline-block;
+    }
+
+    .profile {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .profile-image img {
+        width: 322px;
+        height: 322px;
+    }
+
+    .profile-learn-more {
+        display: grid;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .profile-details span {
+        display: block;
+        text-align: start;
+        width: 245px;
+        font-size: 30px;
+        font-weight: lighter;
+        color: var(--primary-color-headlines);
+    }
+
+    .profile-details button {
+        display: block;
+        text-align: start;
+        background-color: var(--primary-color-accent);
+        color: var(--primary-color-headlines);
+        font-size: 20px;
+        padding: 12px 15px;
+        border: none;
+        border-radius: 10px;
+        margin-top: 20px;
+        display: block;
+        text-align: start;
+    }
+
+    .profile-details img {
+        width: 20px;
+        height: 13px;
+        margin-right: 10px;
+    }
+
+    hr {
+        margin: 0 auto 0 35px;
+    }
+
+    .headline h3 {
+        font-size: 34px;
+        text-align: start;
+        margin-left: 35px;
+    }
+
+    .frame {
+        display: none;
+    }
+
+    .gallery img {
+        width: 355px;
+        height: 160px;
+        object-fit: cover;
+    }
+
+    .gallery {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        justify-items: center;
+        gap: 18px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .card {
+        margin-top: 40px;
+    }
+
+    .card img {
+        width: 100px;
+        height: 75px;
+    }
+
+    .card h4 {
+        font-size: 34px;
+    }
+
+    .card span {
+        font-size: 22px;
+    }
+
+    .card p {
+        width: 570px;
+        justify-content: center;
+        font-size: 18px;
+        margin: 0 auto;
+    }
+
+    .contact-me {
+        margin-top: 80px;
+    }
+
+    .btn-contact {
+        display: none;
+    }
+
+    .contact-me h3,
+    .contact-me p {
+        display: block;
+    }
+
+    .contact-intro {
+        width: 100%;
+    }
+
+    .contact-intro p {
+        width: 410px;
+        font-size: 18px;
+        text-align: left;
+        margin-left: 35px;
+    }
+
+    .contact-form {
+        width: 100%;
+        display: block;
+        font-size: 18px;
+    }
+
+    .contact-form form {
+        text-align: start;
+        /* et paddingu lisamisel boksi mõõdud ei muutuks:*/
+        box-sizing: border-box;
+        padding: 30px;
+    }
+
+    .contact-form .label {
+        color: var(--primary-color-accent);
+        margin-top: 12px;
+    }
+
+    input {
+        height: 30px;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        border: 1px solid var(--primary-color-headlines);
+        font-size: 18px;
+        color: var(--primary-color-headlines);
+        background-color: #bfa9a029;
+    }
+
+    .contact-form button {
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        text-transform: none;
+        /* vaikimisi seaded kustutab*/
+        padding: 6px 26px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    .contact-details {
+        width: 100%;
+        display: inline-block;
+   }
+
+    .contact-details ul {
+        list-style: none;
+        color: var(--primary-color-headlines);
+        font-size: 22px;
+        padding: 0;
+        text-align: start;
+        margin-left: 35px;
+    }
+
+    .contact-details img {
+        margin-right: 30px;
+    }
+
+    .social-media {
+        width: 100%;
+        text-align: start;
+    }
+    
+    .social-media-icons ul li{
+        margin: 0 20px 0 35px;
+    }
+}
