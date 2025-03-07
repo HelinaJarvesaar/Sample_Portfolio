@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap');
+
+:root {
+    --primary-color-text: #BFA9A0;
+    --primary-color-headlines: #3D4677;
+    --primary-color-accent: #DB7559;
+    --primary-color-background: #fdf5f2;
+
+}
+
+body {
+    /* oluline teha iga projekti alguses need seadistused: */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*paddingut või raami lisades ei muutu box-i suurus suuremaks!*/
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    width: 100%;
+    color: var(--primary-color-text);
+    background-color: var(--primary-color-background);
+}
+
+.menu {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.page-menu {
+    justify-self: end;
+    margin: auto 35px auto auto;
+}
+
+.logo-span {
+    display: inline-block;
+    margin: 52px 35px;
+    /* vasakult, alt, ülalt */
+    font-family: "Russo One", sans-serif;
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--primary-color-headlines);
+}
+
+.hamburger {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid var(--primary-color-accent);
+    border-radius: 10px;
+}
+
+.line {
+    width: 35px;
+    height: 4px;
+    /*kriipsu paksus*/
+    background-color: var(--primary-color-accent);
+    margin: 6px;
+}
+
+
+.profile-image img {
+    display: inline-block;
+    /*et saaksime pildi asukohta üles, alla muuta*/
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 50px;
+}
+
+.profile {
+    text-align: center;
+    /* kuna img on inline, siis võetakse seda kui texti*/
+}
+
+hr {
+    width: 160px;
+    height: 8px;
+    background-color: var(--primary-color-accent);
+    border-radius: 7px;
+    border: none;
+    margin: 0 auto;
+}
+
+.headline h3 {
+    font-family: "Russo One", sans-serif;
+    font-weight: regular;
+    font-size: 28px;
+    color: var(--primary-color-headlines);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.frame {
+    width: 100%;
+    /* anname laiuse, et saaks pärast muuta*/
+    text-align: center;
+    /* kohtleb ka pilti tekstina*/
+}
+
+.frame img {
+    display: inline-block;
+    /*kui img on inline, siis ei saa ülalt, alt kauguseid muuta, 
+    kui teeme inline-block, siis saame*/
+    width: 274px;
+    height: 160px;
+    object-fit: cover;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    ;
+}
+
+
+
+.my-clients {
+    width: 100%;
+}
+
+.card {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.card h4 {
+    font-family: "Russo One", sans-serif;
+    font-size: 24px;
+    color: var(--primary-color-headlines);
+    margin: 20px;
+
+}
+
+.card span {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: regular;
+    color: var(--primary-color-headlines);
+    background-color: var(--primary-color-text);
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 16px;
+    ;
+    margin: auto 20px;
+    line-height: 25px;
+}
+
+.contact-me {
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contact-me button {
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 28px;
+    font-family: "Russo One", sans-serif;
+    color: var(--primary-color-headlines);
+    background-color: var(--primary-color-accent);
+    padding: 10px 47px;
+    margin: 50px auto;
+}
+
+.social-media {
+    width: 100%;
+    text-align: center;
+}
+
+.social-media-icons ul {
+    list-style: none;
+    padding: 0;/* listidel on vaikimis vasakul padding! */
+}
+.social-media-icons ul li{
+   display: inline-block;
+   width: 48px;
+   height: 48px;
+   margin-top: 57px;
+   margin: 29px;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    margin-left: 10px;
+    color: var(--primary-color-headlines);
+    font-size: 16px;
+}
+
