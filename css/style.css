@@ -252,7 +252,7 @@ footer p {
     }
 
     .menu-list ul li {
-        display: block;
+        display: inline-block;
     }
 
     .profile {
