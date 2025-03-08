@@ -242,6 +242,9 @@ footer p {
         align-items: center;
     }
 
+    .menu-list{
+        display: block;
+    }
     .menu-list ul {
         list-style: none;
         padding: 0;
