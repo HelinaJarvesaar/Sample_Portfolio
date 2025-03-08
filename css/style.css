@@ -314,6 +314,12 @@ footer p {
         margin-left: 35px;
     }
 
+    .my-works p{
+        display: block;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+    
     .frame {
         display: none;
     }
