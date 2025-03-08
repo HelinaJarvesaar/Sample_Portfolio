@@ -211,6 +211,10 @@ footer p {
     display: none;
 }
 
+.my-works p {
+    display: none;
+}
+
 .gallery {
     display: none;
 }
@@ -227,6 +231,7 @@ footer p {
 .contact-details {
     display: none;
 }
+
 
 @media (min-width: 600px) and (max-width: 1024px) {
     .logo-span {
@@ -314,12 +319,12 @@ footer p {
         margin-left: 35px;
     }
 
-    .my-works p{
+    .my-works p {
         display: block;
         margin-left: 35px;
         margin-right: 35px;
     }
-    
+
     .frame {
         display: none;
     }
