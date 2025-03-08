@@ -257,12 +257,20 @@ footer p {
         text-transform: uppercase;
         font-size: 24px;
         color: var(--primary-color-headlines);
-        font-weight: regular;
     }
 
     .menu-list ul li {
         display: inline-block;
+        margin-left: 10px;
+        transition: transform 0.3s ease-in-out, font-weight 0.3s ease-in-out;
     }
+
+    .menu-list ul li:hover {
+        transform: scale(1.1);
+        font-weight: bolder;
+        cursor: pointer;
+    }
+
 
     .profile {
         display: grid;
@@ -301,12 +309,19 @@ footer p {
         margin-top: 20px;
         display: block;
         text-align: start;
+        transition: box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
     }
 
     .profile-details img {
         width: 20px;
         height: 13px;
         margin-right: 10px;
+    }
+
+    .profile-details button:hover {
+        box-shadow: 5px 5px 6px #bfa9a0ba;
+        cursor: pointer;
+        color: #fffefd;
     }
 
     hr {
@@ -333,6 +348,11 @@ footer p {
         width: 355px;
         height: 160px;
         object-fit: cover;
+        transition: box-shadow 0.5s ease-in-out;
+    }
+
+    .gallery-item img:hover {
+        box-shadow: 8px 8px 6px #bfa9a0ba;
     }
 
     .gallery {
@@ -419,10 +439,17 @@ footer p {
     input,
     textarea {
         width: 100%;
-        border: 1px solid var(--primary-color-headlines);
         font-size: 18px;
-        color: var(--primary-color-headlines);
+        color: var(--primary-color-text);
         background-color: #bfa9a029;
+        border: none;
+    }
+
+    input:focus,
+    textarea:focus {
+        outline: none;
+        border-top: 1px solid var(--primary-color-accent);
+        border-left: 1px solid var(--primary-color-accent);
     }
 
     .contact-form button {
@@ -433,11 +460,20 @@ footer p {
         padding: 6px 26px;
         margin-top: 20px;
         margin-bottom: 0px;
+        transition: box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
     }
+
+    .contact-form button:hover {
+        box-shadow: 5px 5px 6px #bfa9a0ba;
+        cursor: pointer;
+        color: #fffefd;
+    }
+
 
     .contact-details {
         width: 100%;
         display: block;
+        margin-bottom: 50px;
     }
 
     .contact-details ul {
@@ -453,6 +489,23 @@ footer p {
         margin-right: 30px;
     }
 
+    .contact-details ul li {
+        vertical-align: middle;
+        margin-bottom: 20px;
+    }
+
+    .contact-details li {
+        display: flex;
+        /* Enables flexbox */
+        align-items: center;
+        /* Aligns the image and text vertically */
+    }
+
+    .contact-details li:hover {
+        opacity: 0.3;
+
+    }
+
     .social-media {
         width: 100%;
         text-align: start;
@@ -460,6 +513,10 @@ footer p {
 
     .social-media-icons ul li {
         margin: 0 20px 0 35px;
+    }
+
+    .social-media-icons img:hover {
+        opacity: 0.3;
     }
 
     footer {
@@ -494,6 +551,13 @@ footer p {
     .menu-list ul li {
         display: inline-block;
         margin-left: 10px;
+        transition: transform 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+    }
+
+    .menu-list ul li:hover {
+        transform: scale(1.1);
+        font-weight: bolder;
+        cursor: pointer;
     }
 
 
@@ -534,6 +598,7 @@ footer p {
         margin-top: 20px;
         display: block;
         text-align: start;
+        transition: box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
     }
 
     .profile-details img {
@@ -541,6 +606,13 @@ footer p {
         height: 19px;
         margin-right: 10px;
     }
+
+    .profile-details button:hover {
+        box-shadow: 7px 7px 6px #BFA9A0;
+        cursor: pointer;
+        color: #fffefd;
+    }
+
 
     hr {
         width: 250px;
@@ -567,6 +639,11 @@ footer p {
         width: 430px;
         height: 300px;
         object-fit: cover;
+        transition: box-shadow 0.5s ease-in-out;
+    }
+
+    .gallery-item img:hover {
+        box-shadow: 10px 12px 6px #bfa9a0ba;
     }
 
     .gallery {
@@ -685,10 +762,17 @@ footer p {
     input,
     textarea {
         width: 100%;
-        border: 1px solid var(--primary-color-headlines);
         font-size: 18px;
         color: var(--primary-color-headlines);
         background-color: #bfa9a029;
+        border: none;
+    }
+
+    input:focus,
+    textarea:focus {
+        outline: none;
+        border-top: 2px solid var(--primary-color-accent);
+        border-left: 2px solid var(--primary-color-accent);
     }
 
     .contact-form button {
@@ -699,7 +783,16 @@ footer p {
         padding: 8px 59px;
         margin-top: 20px;
         margin-bottom: 0px;
+        transition: box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+
     }
+
+    .contact-form button:hover {
+        box-shadow: 5px 5px 6px #bfa9a0ba;
+        cursor: pointer;
+        color: #fffefd;
+    }
+
 
     .contact-details {
         width: 100%;
@@ -721,6 +814,10 @@ footer p {
 
     }
 
+    .contact-details li:hover {
+        opacity: 0.3;
+    }
+
     .contact-details img {
         margin-right: 30px;
     }
@@ -730,6 +827,7 @@ footer p {
         grid-template-columns: 2/3;
         grid-template-rows: 2/3;
         text-align: start;
+        margin-bottom: 30px;
     }
 
     .social-media-icons ul li {
@@ -739,6 +837,10 @@ footer p {
     .social-media-icons img {
         width: 100px;
         height: 100px;
+    }
+
+    .social-media-icons img:hover {
+        opacity: 0.3;
     }
 
     .form-contacts-social {
