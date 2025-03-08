@@ -550,7 +550,7 @@ footer p {
 
     .menu-list ul li {
         display: inline-block;
-        margin-left: 10px;
+        margin-left: 35px;
         transition: transform 0.3s ease-in-out, font-weight 0.3s ease-in-out;
     }
 
