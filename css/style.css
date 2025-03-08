@@ -238,7 +238,7 @@ footer p {
     }
 
     .menu {
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 2fr 5fr;
         align-items: center;
     }
 
@@ -252,7 +252,7 @@ footer p {
     }
 
     .menu-list ul li {
-        display: inline-block;
+        display: block;
     }
 
     .profile {
@@ -422,8 +422,8 @@ footer p {
 
     .contact-details {
         width: 100%;
-        display: inline-block;
-   }
+        display: block;
+    }
 
     .contact-details ul {
         list-style: none;
@@ -442,8 +442,307 @@ footer p {
         width: 100%;
         text-align: start;
     }
-    
-    .social-media-icons ul li{
+
+    .social-media-icons ul li {
         margin: 0 20px 0 35px;
     }
+}
+
+@media (min-width: 1025px) {
+
+    .logo-span {
+        font-size: 58px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .menu {
+        grid-template-columns: 2fr 5fr;
+        align-items: center;
+    }
+
+    .menu-list ul {
+        list-style: none;
+        padding: 0;
+        text-transform: uppercase;
+        font-size: 32px;
+        color: var(--primary-color-headlines);
+        font-weight: regular;
+    }
+
+    .menu-list ul li {
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+
+    .profile {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .profile-image img {
+        width: 600px;
+        height: 600px;
+    }
+
+    .profile-learn-more {
+        display: grid;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .profile-details span {
+        display: block;
+        text-align: start;
+        width: 370px;
+        font-size: 40px;
+        font-weight: lighter;
+        color: var(--primary-color-headlines);
+    }
+
+    .profile-details button {
+        display: block;
+        text-align: start;
+        background-color: var(--primary-color-accent);
+        color: var(--primary-color-headlines);
+        font-size: 32px;
+        padding: 21px 30px;
+        border: none;
+        border-radius: 10px;
+        margin-top: 20px;
+        display: block;
+        text-align: start;
+    }
+
+    .profile-details img {
+        width: 30px;
+        height: 19px;
+        margin-right: 10px;
+    }
+
+    hr {
+        width: 250px;
+        margin: 100px auto 0 35px;
+    }
+
+    .headline h3 {
+        font-size: 50px;
+        text-align: start;
+        margin-left: 35px;
+    }
+
+    .my-works-intro p {
+        width: 923px;
+        margin-left: 35px;
+        font-size: 18px;
+    }
+
+    .frame {
+        display: none;
+    }
+
+    .gallery img {
+        width: 430px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .gallery {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+        justify-items: center;
+        gap: 18px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+
+    .card {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        width: 95%;
+        border: 1px solid var(--primary-color-text);
+        margin: 35px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .card img {
+        width: 300px;
+        height: 225px;
+        margin: 50px;
+
+    }
+
+    .card h4 {
+        font-size: 45px;
+        margin: 40px 133px 29px 133px;
+
+    }
+
+    .card span {
+        display: inline-block;
+        margin-left: 133px;
+    }
+
+    .card p {
+        font-size: 18px;
+        margin: 0 133px 40px 133px;
+        ;
+    }
+
+    .card-text-content {
+        display: grid;
+        text-align: start;
+        box-sizing: border-box;
+
+    }
+
+    .role-description {
+        display: inline-block;
+        margin-right: 16px;
+    }
+
+
+    .get-in-touch {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, auto);
+        box-sizing: border-box;
+        padding: 35px;
+    }
+
+    .contact-me {
+        margin-top: 80px;
+    }
+
+    .btn-contact {
+        display: none;
+    }
+
+    .contact-me h3,
+    .contact-me p {
+        display: block;
+    }
+
+    .contact-intro {
+        width: 100%;
+    }
+
+    .contact-intro p {
+        width: 500px;
+        font-size: 18px;
+        text-align: left;
+        margin-left: 35px;
+    }
+
+    .contact-form {
+        width: 100%;
+        display: block;
+        font-size: 25px;
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+
+    .contact-form form {
+        text-align: start;
+    }
+
+    .contact-form .label {
+        color: var(--primary-color-accent);
+        margin-top: 12px;
+    }
+
+    input {
+        height: 50px;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        border: 1px solid var(--primary-color-headlines);
+        font-size: 18px;
+        color: var(--primary-color-headlines);
+        background-color: #bfa9a029;
+    }
+
+    .contact-form button {
+        font-family: "Roboto", sans-serif;
+        font-size: 28px;
+        text-transform: none;
+        /* vaikimisi seaded kustutab*/
+        padding: 8px 59px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    .contact-details {
+        width: 100%;
+        display: block;
+
+    }
+
+    .contact-details ul {
+        list-style: none;
+        color: var(--primary-color-headlines);
+        font-size: 35px;
+        padding: 0;
+        text-align: start;
+        margin-left: 50px;
+    }
+
+    .contact-details ul li{
+        margin: 50px auto;
+
+    }
+
+    .contact-details img {
+        margin-right: 30px;
+    }
+
+
+    .social-media {
+        grid-template-columns: 2/3;
+        grid-template-rows: 2/3;
+        text-align: start;
+    }
+
+    .social-media-icons ul li {
+        margin: 0 50px 0 50px;
+    }
+
+    .social-media-icons img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .form-contacts-social {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 2 1fr;
+    }
+
+    .contacts-social {
+        width: 100%;
+    }
+
+    .social-media .headline h3{
+        margin-left: 50px;
+
+    }
+
+    footer img{
+        width: 23px;
+        height: 23px;
+    }
+    footer p{
+        font-size: 22px;
+    }
+
 }
