@@ -1,6 +1,7 @@
 const btnHamburger = document.querySelector('.hamburger');
 const menuList = document.querySelector('.menu-list');
 const menuLinks = document.querySelectorAll('.menu-list a');
+const closeX = document.querySelector('#x');
 
 btnHamburger.addEventListener('click', () => {
     menuList.classList.toggle('active');
@@ -17,6 +18,11 @@ menuLinks.forEach((link) => {
         menuList.classList.remove('active');
     })
 })
+
+closeX.addEventListener('click', ()=>{
+    menuList.classList.remove('active');
+})
+
 
 const frameImage = document.querySelector('#frame');
 const images = ['1.webp', '2.webp', '3.jpeg', '4.jpeg', '5.webp', '6.jpeg'];

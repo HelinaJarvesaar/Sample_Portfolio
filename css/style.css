@@ -15,7 +15,6 @@ body {
     box-sizing: border-box;
     /*paddingut või raami lisades ei muutu box-i suurus suuremaks!*/
     font-family: "Roboto", sans-serif;
-    overflow: hidden;
 }
 
 .container {
@@ -203,10 +202,6 @@ footer p {
     font-size: 16px;
 }
 
-/*
-.menu-list ul li {
-    display: none;
-}*/
 
 .profile-learn-more {
     display: none;
@@ -233,6 +228,13 @@ footer p {
     display: none;
 }
 
+.menu-list img {
+    width: 40px;
+    height: 35px;
+    position: absolute;
+    top: 33px;
+    right: 33px;
+}
 
 .menu-list {
     position: absolute;
@@ -256,11 +258,19 @@ footer p {
 
 .menu-list ul li {
     margin-bottom: 34px;
+    transition: transform 0.3s ease-in-out, font-weight 0.3s ease-in-out;
 }
 
 .menu-list ul li a {
     text-decoration: none;
     color: #3D4677;
+}
+
+
+.menu-list ul li:hover {
+    transform: scale(1.1);
+    font-weight: bolder;
+    cursor: pointer;
 }
 
 .menu-list.active {
@@ -278,13 +288,26 @@ footer p {
     }
 
     .menu {
+        display: grid; 
         grid-template-columns: 2fr 5fr;
         align-items: center;
     }
 
-    .menu-list {
+
+    .menu-list{
         display: block;
+        position: static;
+        width: auto;
+        height: 50px;
+        padding: 0;
+        background-color: transparent;
     }
+
+
+    .menu-list img{
+        display: none;
+    }
+
 
     .menu-list ul {
         list-style: none;
@@ -570,10 +593,25 @@ footer p {
     }
 
     .menu {
+        display: grid;
         grid-template-columns: 2fr 5fr;
         align-items: center;
     }
 
+
+    .menu-list img{
+        display: none;
+    }
+
+
+    .menu-list{
+        display: block;
+        position: static;
+        width: auto;
+        height: 50px;
+        padding: 0;
+        background-color: transparent;
+    }
     .menu-list ul {
         list-style: none;
         padding: 0;
@@ -905,6 +943,4 @@ footer p {
     footer {
         margin: 100px auto;
     }
-
-
 }
