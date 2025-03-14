@@ -56,6 +56,9 @@ body {
     border-radius: 10px;
 }
 
+
+
+
 .line {
     width: 35px;
     height: 4px;
@@ -63,7 +66,6 @@ body {
     background-color: var(--primary-color-accent);
     margin: 6px;
 }
-
 
 .profile-image img {
     display: inline-block;
@@ -99,6 +101,9 @@ hr {
     margin-bottom: 0;
 }
 
+
+
+
 .frame {
     width: 100%;
     /* anname laiuse, et saaks pärast muuta*/
@@ -116,6 +121,9 @@ hr {
     margin-top: 25px;
     margin-bottom: 50px;
 }
+
+
+
 
 .my-clients {
     width: 100%;
@@ -152,6 +160,10 @@ hr {
     line-height: 25px;
 }
 
+
+
+
+
 .contact-me {
     width: 100%;
     margin-top: 50px;
@@ -169,6 +181,9 @@ hr {
     padding: 10px 47px;
     margin: 50px auto;
 }
+
+
+
 
 .social-media {
     width: 100%;
@@ -203,6 +218,9 @@ footer p {
 }
 
 
+
+
+
 .profile-learn-more {
     display: none;
 }
@@ -227,6 +245,9 @@ footer p {
 .contact-details {
     display: none;
 }
+
+
+
 
 .menu-list img {
     width: 40px;
@@ -278,6 +299,63 @@ footer p {
 }
 
 
+
+
+.contact-form {
+    width: 100%;
+    background-color: #FFFEFD;
+    display: none; 
+    font-size: 16px;
+}
+
+.contact-form form {
+    text-align: start;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.contact-form .label {
+    color: var(--primary-color-accent);
+    margin-top: 12px;
+}
+
+input {
+    height: 30px;
+}
+
+input,
+textarea {
+    width: 100%;
+    font-size: 18px;
+    color: var(--primary-color-text);
+    background-color: #bfa9a029;
+    border: none;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-top: 1px solid var(--primary-color-accent);
+    border-left: 1px solid var(--primary-color-accent);
+}
+
+.contact-form button {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    text-transform: none;
+    padding: 6px 26px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    transition: box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+    box-shadow: 5px 5px 6px #bfa9a0ba;
+    cursor: pointer;
+    color: #fffefd;
+}
+
+
 @media (min-width: 600px) and (max-width: 1024px) {
     .logo-span {
         font-size: 34px;
@@ -293,7 +371,6 @@ footer p {
         align-items: center;
     }
 
-
     .menu-list{
         display: block;
         position: static;
@@ -303,11 +380,9 @@ footer p {
         background-color: transparent;
     }
 
-
     .menu-list img{
         display: none;
     }
-
 
     .menu-list ul {
         list-style: none;
@@ -328,6 +403,8 @@ footer p {
         font-weight: bolder;
         cursor: pointer;
     }
+
+
 
 
     .profile {
@@ -382,6 +459,9 @@ footer p {
         color: #fffefd;
     }
 
+
+
+
     hr {
         margin: 0 auto 0 35px;
     }
@@ -397,6 +477,8 @@ footer p {
         margin-left: 35px;
         margin-right: 35px;
     }
+
+
 
     .frame {
         display: none;
@@ -424,6 +506,9 @@ footer p {
         margin-bottom: 50px;
     }
 
+
+
+
     .card {
         margin-top: 40px;
     }
@@ -447,6 +532,8 @@ footer p {
         font-size: 18px;
         margin: 0 auto;
     }
+
+
 
     .contact-me {
         margin-top: 80px;
@@ -472,6 +559,9 @@ footer p {
         margin-left: 35px;
     }
 
+
+
+
     .contact-form {
         width: 100%;
         display: block;
@@ -480,7 +570,7 @@ footer p {
 
     .contact-form form {
         text-align: start;
-        /* et paddingu lisamisel boksi mõõdud ei muutuks:*/
+         /* et paddingu lisamisel boksi mõõdud ei muutuks:*/
         box-sizing: border-box;
         padding: 30px;
     }
@@ -528,6 +618,8 @@ footer p {
     }
 
 
+
+
     .contact-details {
         width: 100%;
         display: block;
@@ -561,8 +653,10 @@ footer p {
 
     .contact-details li:hover {
         opacity: 0.3;
-
     }
+
+
+
 
     .social-media {
         width: 100%;
@@ -582,6 +676,9 @@ footer p {
     }
 }
 
+
+
+
 @media (min-width: 1025px) {
 
     .logo-span {
@@ -598,11 +695,9 @@ footer p {
         align-items: center;
     }
 
-
     .menu-list img{
         display: none;
     }
-
 
     .menu-list{
         display: block;
@@ -612,6 +707,7 @@ footer p {
         padding: 0;
         background-color: transparent;
     }
+
     .menu-list ul {
         list-style: none;
         padding: 0;
@@ -632,6 +728,8 @@ footer p {
         font-weight: bolder;
         cursor: pointer;
     }
+
+
 
 
     .profile {
@@ -687,6 +785,8 @@ footer p {
     }
 
 
+
+
     hr {
         width: 250px;
         margin: 100px auto 0 35px;
@@ -703,6 +803,9 @@ footer p {
         margin-left: 35px;
         font-size: 18px;
     }
+
+
+
 
     .frame {
         display: none;
@@ -729,6 +832,8 @@ footer p {
         margin-top: 50px;
         margin-bottom: 50px;
     }
+
+
 
 
     .card {
@@ -779,6 +884,7 @@ footer p {
     }
 
 
+
     .get-in-touch {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -811,6 +917,9 @@ footer p {
         margin-left: 35px;
     }
 
+
+
+
     .contact-form {
         width: 100%;
         display: block;
@@ -836,7 +945,7 @@ footer p {
     textarea {
         width: 100%;
         font-size: 18px;
-        color: var(--primary-color-headlines);
+        color: var(--primary-color-text);
         background-color: #bfa9a029;
         border: none;
     }
@@ -852,7 +961,6 @@ footer p {
         font-family: "Roboto", sans-serif;
         font-size: 28px;
         text-transform: none;
-        /* vaikimisi seaded kustutab*/
         padding: 8px 59px;
         margin-top: 20px;
         margin-bottom: 0px;
@@ -867,10 +975,11 @@ footer p {
     }
 
 
+
+
     .contact-details {
         width: 100%;
         display: block;
-
     }
 
     .contact-details ul {
@@ -880,10 +989,11 @@ footer p {
         padding: 0;
         text-align: start;
         margin-left: 50px;
+        margin-top: 85px;
     }
 
     .contact-details ul li {
-        margin: 50px auto;
+        margin-bottom: 45px;
 
     }
 
@@ -896,11 +1006,13 @@ footer p {
     }
 
 
+
+
     .social-media {
         grid-template-columns: 2/3;
         grid-template-rows: 2/3;
         text-align: start;
-        margin-bottom: 30px;
+        margin-bottom: 60px;
     }
 
     .social-media-icons ul li {
