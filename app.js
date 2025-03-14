@@ -15,6 +15,8 @@ const inputName = document.querySelector('#name');
 const inputEmail = document.querySelector('#email');
 const inputMessage = document.querySelector('#message');
 
+const btnCheckMyWorks = document.querySelector('#check-my-works');
+
 
 btnHamburger.addEventListener('click', () => {
     menuList.classList.toggle('active');
@@ -23,10 +25,6 @@ btnHamburger.addEventListener('click', () => {
 document.addEventListener('click', (event) => {
     if (!menuList.contains(event.target) && !btnHamburger.contains(event.target)) {
         menuList.classList.remove('active');
-    }
-
-    if (!contactForm.contains(event.target) && !btnContactMe.contains(event.target)) {
-        contactForm.style.display = 'none';
     }
 
 })
@@ -60,7 +58,7 @@ frameImage.addEventListener('click', () => {
 
 btnContactMe.addEventListener('click', () => {
     if (window.innerWidth < 600) {
-    contactForm.style.display = 'block';
+        contactForm.style.display = 'block';
     }
 })
 
@@ -89,3 +87,11 @@ contactForm.addEventListener('submit', (event) => {
     console.log('form submitted');
 
 })
+
+
+
+btnCheckMyWorks.addEventListener('click', ()=>{
+    document.querySelector('.my-works').scrollIntoView({ behavior: 'smooth' });
+})
+
+  
