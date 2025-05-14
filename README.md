@@ -13,7 +13,7 @@
 
 ### Project Links: 
 
-- [**Figma Project**](https://www.figma.com/design/EVdgivg9Nz12JI5q6i0ECV/MyPortfolio?node-id=39-1041&t=4FbRWBSk8xvpYJKA-1)
+- [**Figma Project**](https://www.figma.com/design/EVdgivg9Nz12JI5q6i0ECV/MyPortfolio?node-id=0-1&t=Bsyub1UpKUukQDR7-1)
 
 - [**Figma Mobile Prototype**](https://www.figma.com/proto/EVdgivg9Nz12JI5q6i0ECV/MyPortfolio?node-id=39-967&p=f&t=chj3dTZFTtzEDr1R-1&scaling=scale-down&content-scaling=fixed&page-id=39%3A964&starting-point-node-id=39%3A967)
 
