@@ -1,4 +1,4 @@
-## 1. Portfolio Website — Built as Part of Figma & Front-End Learning Program
+Portfolio Website — Built as Part of Figma & Front-End Learning Program
 
 - This project followed a guided course curriculum where I practiced implementing a design brief from a tutor. While the visual style was provided, I focused on responsive layout, HTML/CSS, and building a live site from a Figma file.
 - In hindsight, I’d redesign the visuals to better reflect my style — but this version shows my ability to follow structure, build to spec, and deploy a live result.
