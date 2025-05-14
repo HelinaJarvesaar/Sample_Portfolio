@@ -7,8 +7,6 @@
 
 [**Figma Mobile Prototype**](https://www.figma.com/proto/EVdgivg9Nz12JI5q6i0ECV/MyPortfolio?node-id=39-967&p=f&t=chj3dTZFTtzEDr1R-1&scaling=scale-down&content-scaling=fixed&page-id=39%3A964&starting-point-node-id=39%3A967)
 
-[**GitHub repo**](https://github.com/HelinaJarvesaar/myPortfolio.git)
-
 [**Responsive Webpag (HTML5, CSS3, JavaScript)**](https://helinajarvesaar.github.io/myPortfolio/)
 
 **Screenshots:**
