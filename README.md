@@ -1,4 +1,4 @@
-# Portfolio Website — Built as Part of Figma & Front-End Learning Program
+# Sample Portfolio — Built as Part of Figma & Front-End Learning Program
 
 ### Overview:
 - This project followed a guided course curriculum where I practiced implementing a design brief from a tutor.
